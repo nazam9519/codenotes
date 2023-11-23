@@ -1,0 +1,27 @@
+#Docker
+-------
+##containers
+-------
+docker ps -a #show all docker processes
+docker stop|start <proc>
+-------
+##compose
+-------
+#if using docker-compose.yml as the filename
+docker compose down 
+docker compose -d up 
+#if file is named differently than docker-compose.yml
+docker compose -f <yml-file-path> down
+docker compose -f <yml-file-path> -d up #-d = detach and run in separate proc
+-------
+##volume
+#stored in /var/lib/docker/volumes
+-------
+docker volume ls
+docker volume rm <vol>
+docker volume create <vol-name>
+--------
+##network
+--------
+docker network create <network name>
+--------
