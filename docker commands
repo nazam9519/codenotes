@@ -3,7 +3,9 @@
 ##containers
 -------
 docker ps -a #show all docker processes
-docker stop|start <proc>
+docker stop|start <container name>
+#launch a shell!
+docker exec -it <container name> /bin/bash
 -------
 ##compose
 -------
