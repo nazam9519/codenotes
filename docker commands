@@ -14,7 +14,7 @@ docker compose down
 docker compose -d up 
 #if file is named differently than docker-compose.yml
 docker compose -f <yml-file-path> down
-docker compose -f <yml-file-path> -d up #-d = detach and run in separate proc
+docker compose -f <yml-file-path> up -d #-d = detach and run in separate proc
 -------
 ##volume
 #stored in /var/lib/docker/volumes
